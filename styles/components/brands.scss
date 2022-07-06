@@ -1,0 +1,28 @@
+.brands {
+    &-container {
+        padding: 5rem 3rem;
+    }
+    &-title {
+        text-transform: uppercase;
+        font-weight: $fw-500;
+        font-size: 2rem;
+        text-align: center;
+        span { 
+            color: $orange-clr;
+            font-weight: bold;
+        }
+    }
+    &-list {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+        &-item {
+
+        }
+    }
+}
