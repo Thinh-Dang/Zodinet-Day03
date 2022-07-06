@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Day 03</title>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -44,8 +45,10 @@
                     </li>
             </ul>
         </nav>
-        <div class="btn btn-hamburger">burger</div>
-        <div class="hamburger-menu">
+        <div class="btn btn-hamburger" id="btn-hamburger">
+            <img src="./assets/img/hamburger-open.png" alt="">
+        </div>
+        <div class="hamburger-menu" id="menu">
             <div class="hamburger-menu-head">
                 <div class="header-nav-item btn-group">
                     <div class="btn btn-login">Login</div>
@@ -55,7 +58,6 @@
                         <span class="lan lan-active">En</span>
                     </div>
                 </div>
-                <div class="btn btn-closemenu">X</div>
             </div>
             <ul class="hamburger-menu-list">
                 <a href="#">
@@ -80,7 +82,17 @@
         </div>
     </header>
     <main>
-        <section class="banner"></section>
+        <section class="banner">
+            <div class="banner-container container">
+                <h1 class="banner-title">
+                    One million success stories</br>
+                    Start your today.
+                </h1>
+                <div class="search">
+                    <label for="search-input" class="search-label">Keyword/ Job Title</label>
+                </div>
+            </div>
+        </section>
         <section class="brands"></section>
         <section class="browseJobs"></section>
         <section class="listJobs"></section>

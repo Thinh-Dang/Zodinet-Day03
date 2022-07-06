@@ -1,0 +1,10 @@
+.banner { 
+    color: #fff;
+    background-color: #b61c1c;
+    background-image: url("../../assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-container{
+        padding: 10rem 5rem;
+    }
+}
