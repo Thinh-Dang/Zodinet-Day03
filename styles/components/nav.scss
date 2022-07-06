@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    &-nav {
+        a {
+            text-decoration: none;
+            color: $primary-dark-clr;
+        }
+        list-style: none;
+        &-item {
+            display: inline-block;
+        }
+    }
+    & .btn-hamburger,.hamburger-menu{
+        display: none;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
