@@ -1,6 +1,6 @@
 .browseJobs {
     &-container {
-        padding: 4rem;
+        padding: 2rem;
         background-color: #F9FCFF;
     }
     &-title {
@@ -18,9 +18,10 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 70%;
+        width: 100%;
         gap: 1rem;
         &-item {
+            cursor: pointer;
             flex: 100%;
             display: flex;
             padding: 1.6rem 1rem;
@@ -60,12 +61,19 @@
             &-positions {
                 font-weight: $fw-500;
             }
+            &:hover {
+                box-shadow: 0px 0px 24px 10px #0019361A;
+            }
         }
     }
 }
 @include lg {
     .browseJobs {
+        &-container {
+            padding: 4rem;
+        }
         &-list {
+            width: 70%;
             &-item {
                 flex: 45%;
             }
