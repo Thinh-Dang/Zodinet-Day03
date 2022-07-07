@@ -9,7 +9,7 @@
     };
 }
 @mixin lg {
-    @media (min-width: 1350px) {
+    @media (min-width: 1400px) {
         @content
     };
 }

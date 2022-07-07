@@ -1,0 +1,74 @@
+.browseJobs {
+    &-container {
+        padding: 3rem;
+        background-color: #F9FCFF;
+    }
+    &-title {
+        text-transform: uppercase;
+        font-weight: $fw-400;
+        font-size: 2rem;
+        text-align: center;
+        span { 
+            color: $primary-clr;
+            font-weight: bold;
+        }
+    }
+    &-list {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+        gap: 1rem;
+        &-item {
+            flex: 100%;
+            display: flex;
+            padding: 1.6rem 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            font-size: 1.2rem;
+            &-title {
+                font-weight: bold;
+                font-size: 1.3rem;
+                padding-inline: 1rem;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $primary-clr;
+                width: 3px;
+                border-radius: 2px;
+                height: 45%;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &::after {
+                content: "";
+                    position: absolute;
+                    background-color: #DAE5F2;
+                    width: 1px;
+                    border-radius: 2px;
+                    height: 60%;
+                    top: 50%;
+                    right: max(25%,130px);
+                    transform: translateY(-50%);
+            }
+            &-positions {
+                font-weight: $fw-500;
+            }
+        }
+    }
+}
+@include lg {
+    .browseJobs {
+        &-list {
+            &-item {
+                flex: 45%;
+            }
+        }
+    }
+}
