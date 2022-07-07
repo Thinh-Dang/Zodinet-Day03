@@ -70,14 +70,17 @@ table {
   margin-top: 1rem;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30%;
+  align-items: center;
   gap: 1rem;
   padding-inline: 1rem;
-  width: 80%;
+  width: min(90vw, 60%);
 }
 .banner-container .search-handle {
   display: flex;
+  margin-top: 20px;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
   gap: 0.5rem;
 }
 .banner-container .search-handle-input {
