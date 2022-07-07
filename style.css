@@ -250,7 +250,7 @@ table {
     display: block;
   }
   .btn-hamburger, .hamburger-menu, .hamburger-menu .active {
-    opacity: 0 !important;
+    display: none !important;
   }
 }
 .brands-container {
