@@ -19,7 +19,7 @@
             width: min(90vw,60%);
             &-handle{
                 display: flex;
-                margin-top: 20px;
+                margin-top: 5px;
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
@@ -63,8 +63,10 @@
     }
     .search {
         margin-left: 0 !important;
+        align-items: baseline !important;
         &-handle {
             flex-direction: row !important;
+            margin-top: 5px!important;
             &-input {
                 width: 70% !important;
             }
