@@ -53,6 +53,18 @@ table {
   align-items: center;
 }
 
+.blue-txt {
+  color: #0091EB;
+}
+
+.grean-txt {
+  color: #7EC04D;
+}
+
+.orange-txt {
+  color: #F5A200;
+}
+
 .banner {
   color: #fff;
   background-color: #1a2834;
