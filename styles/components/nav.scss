@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    padding: 1rem 3rem;
+    padding: .5rem 1rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
         &-item {
             display: inline-block;
             margin-right: 2.5rem;
-            font-weight: $fw-600;
+            //font-weight: $fw-600;
             font-family: $font-family;
             font-size: 1.1rem;
             &:hover {
@@ -82,8 +82,11 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity ease-in-out 400ms;
+        .header-nav-item {
+            margin: 0;
+        }
         &-head {
-            width: 80vw;
+            width: 100%;
             .btn-group {
                 display: flex;
                 flex-direction: row;
@@ -93,10 +96,11 @@
             }
         }
         &-list {
-            width: 80vw;
+            width: 100%;
             align-items: center;
             display: flex;
             flex-direction: column;
+            
             a {
                 text-decoration: none;
                 color: $primary-dark-clr;
@@ -116,9 +120,18 @@
 }
 @include lg {
     .header{
+        padding-inline: 3rem ;
         font-size: 2rem;
+        a {
+            img {
+                height: 100%;
+            }
+        }
         &-nav {
             display: block;
+            a {
+                
+            }
         }
     }
     .btn-hamburger,.hamburger-menu, .hamburger-menu .active{

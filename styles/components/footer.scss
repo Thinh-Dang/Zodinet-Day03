@@ -11,11 +11,11 @@ footer {
 
     .footerNav {
         border-bottom: 1px solid #384e70;
-        padding: 5rem 8rem;
+        padding: 2rem 2rem 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         &-list {
             display: flex;
             flex-direction: column;
@@ -24,6 +24,7 @@ footer {
             &-item {
                 display: flex;
                 flex-direction: column ;
+                
                 h2 {
                     font-weight: bold;
                     margin-bottom: 18px;
@@ -39,8 +40,7 @@ footer {
                         align-items: center;
                         word-wrap: break-word;
                         span {
-                            position: absolute;
-                            left: -35px;
+                            margin-right: 1rem;
                             img {
                                 width: 1.5rem;
                                 height: 1.5rem;
@@ -52,16 +52,18 @@ footer {
         }
     }
     .footerContact {
-        padding: 2rem 8rem;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: 2rem;
         &-copyright-social {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 100%;
+            justify-content: space-between;
             gap: 2rem;
             img {
                 width: 2rem;
@@ -78,16 +80,31 @@ footer {
         .footerNav {
             flex-direction: row;
             justify-content: space-between;
+            padding-inline: 4rem;
             gap: 4rem;
             &-list {
                 flex-direction: row;
+                margin-top: 0;
                 &-item {
                     flex-direction: column;
+                    &-nav {
+                        li {
+                            span {
+                                position: absolute;
+                                left: -30px;
+                            }
+                        }
+                    }
                 }
             }
         }
         .footerContact {
             flex-direction: row;
+            padding-inline: 4rem;
+            align-items: center;
+            &-copyright-social {
+                width: unset;
+            }
         }
     }
 }

@@ -24,6 +24,7 @@ body {
 	line-height: 1;
     box-sizing: border-box;
     font-family: $font-family;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
