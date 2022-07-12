@@ -18,7 +18,8 @@ footer {
         align-items: flex-start;
         &-list {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-top: 20px;
             gap: 2rem;
             &-item {
@@ -73,9 +74,13 @@ footer {
     }
 }
 @include md-l {
-
+    // footer {
+    //     .footerNav {
+    //         flex-direction: row;
+    //     }
+    // }
 }
-@include lg {
+@include md-l {
     footer {
         .footerNav {
             flex-direction: row;
@@ -85,6 +90,7 @@ footer {
             &-list {
                 flex-direction: row;
                 margin-top: 0;
+                justify-content: flex-end;
                 &-item {
                     flex-direction: column;
                     &-nav {
